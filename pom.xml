@@ -11,7 +11,7 @@
 	<name>my-tintol</name>
 	<description>slip project for Spring Boot</description>
 
-	<parent>
+	<parent> <!--  부모 스타터에서 버전 상속  -->
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.3.RELEASE</version>
@@ -24,7 +24,7 @@
 		<java.version>1.8</java.version>
 	</properties>
 
-	<dependencies>
+	<dependencies> <!-- 스타터 의존성  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mustache</artifactId>
@@ -60,7 +60,7 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<plugin> <!-- 스프링 부트 플러그인 적용  -->
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
